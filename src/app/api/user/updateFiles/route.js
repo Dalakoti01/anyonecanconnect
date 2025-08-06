@@ -1,7 +1,7 @@
 // app/api/update-files/route.js
 import dbConnect from "@/lib/dbConnect";
 import User from "@/models/userModels";
-import getUserIdFromRequest from "@/lib/getUserIdFromRequest";
+import {getUserIdFromRequest} from "@/lib/getUserIdFromRequest";
 import { parseForm } from "@/lib/parseForm";
 import { NextResponse } from "next/server";
 import cloudinary from "@/lib/cloudinary";
