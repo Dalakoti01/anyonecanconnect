@@ -45,38 +45,39 @@ const FreelancerHome = () => {
     <div className="w-full min-h-screen pt-6 pb-10 h-full bg-[#fcfcfc]">
       {/* Hero Section */}
       <div className="w-full flex justify-center">
-        <div className="max-w-7xl w-full flex flex-col md:flex-row justify-center gap-5">
-          <div className="bg-blue-800 w-full md:w-[450px] text-white rounded-lg p-5 md:p-7 mb-4 md:mb-0">
-            <h1 className="font-bold text-2xl md:text-4xl text-center">
-              Welcome Back {user?.fullName}
-            </h1>
-            <p className="mt-6 md:mt-10 text-base md:text-xl text-center">
-              Discover new opportunities and manage your freelancing career efficiently.
-            </p>
-          </div>
+     <div className="max-w-7xl w-full flex flex-col md:flex-row justify-center gap-5">
+  <div className="bg-blue-800 w-full md:max-w-[450px] text-white rounded-lg p-5 md:p-7 mb-4 md:mb-0">
+    <h1 className="font-bold text-2xl md:text-4xl text-center">
+      Welcome Back {user?.fullName}
+    </h1>
+    <p className="mt-6 md:mt-10 text-base md:text-xl text-center">
+      Discover new opportunities and manage your freelancing career efficiently.
+    </p>
+  </div>
 
-          <div className="flex flex-col justify-center items-center gap-5 md:gap-7 rounded-lg p-4 md:p-5 bg-[rgb(241,236,236)] w-full">
-            <p className="text-slate-700 text-lg md:text-xl font-bold text-center">
-              Your Performance Dashboard
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 md:gap-5 w-full justify-center">
-              <div className="shadow-xl flex flex-col items-center w-full sm:w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-blue-800">
-                <h1 className="font-bold text-xl md:text-2xl">{user?.activeJob?.length || 0}</h1>
-                <p>Active Jobs</p>
-              </div>
-              <div className="shadow-xl flex flex-col items-center w-full sm:w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-green-800">
-                <h1 className="font-bold text-xl md:text-2xl">{user?.projectCompleted}</h1>
-                <p>Project Completed</p>
-              </div>
-              <div className="shadow-xl flex flex-col items-center w-full sm:w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-yellow-500">
-                <h1 className="font-bold flex text-xl md:text-2xl">
-                  <IndianRupee className="mt-1" /> {user?.money || 0}
-                </h1>
-                <p>Earned This Month</p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div className="flex flex-col justify-center items-center gap-5 md:gap-7 rounded-lg p-4 md:p-5 bg-[rgb(241,236,236)] w-full">
+    <p className="text-slate-700 text-lg md:text-xl font-bold text-center">
+      Your Performance Dashboard
+    </p>
+    <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:gap-5 w-full justify-center">
+      <div className="shadow-xl flex flex-col items-center flex-1 min-w-[140px] sm:max-w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-blue-800">
+        <h1 className="font-bold text-xl md:text-2xl">{user?.activeJob?.length || 0}</h1>
+        <p>Active Jobs</p>
+      </div>
+      <div className="shadow-xl flex flex-col items-center flex-1 min-w-[140px] sm:max-w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-green-800">
+        <h1 className="font-bold text-xl md:text-2xl">{user?.projectCompleted}</h1>
+        <p>Project Completed</p>
+      </div>
+      <div className="shadow-xl flex flex-col items-center flex-1 min-w-[140px] sm:max-w-[200px] bg-white p-4 md:p-5 rounded-lg border-t-4 border-yellow-500">
+        <h1 className="font-bold flex text-xl md:text-2xl">
+          <IndianRupee className="mt-1" /> {user?.money || 0}
+        </h1>
+        <p>Earned This Month</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
 
       {/* Dashboard Analytics */}
@@ -197,7 +198,7 @@ const FreelancerHome = () => {
             ].map((item, i) => (
               <div key={i} className="bg-slate-100 rounded-lg p-5 flex flex-col gap-1 items-center">
                 <div className="bg-blue-200 text-blue-600 rounded-full p-3"><item.icon /></div>
-                <p className="font-bold">{item.title}</p>
+                <p className="font-bold text-center">{item.title}</p>
                 <p className="text-sm text-slate-600">{item.jobs} Jobs Available</p>
               </div>
             ))}

@@ -40,48 +40,43 @@ const HireSelectionAssistant = () => {
         </h1>
       </div>
       <div className="w-full flex justify-center">
-        <div className="w-full max-w-6xl  p-10 bg-white shadow-2xl rounded-xl">
-          <div className="flex w-full justify-between">
-            <h1 className="text-xl font-bold">Hire Selection Assistant</h1>
-            <Button className="bg-blue-600 text-white " variant="outline">
-              Get Started
-            </Button>
-          </div>
+       <div className="w-full max-w-6xl p-5 sm:p-8 lg:p-10 bg-white shadow-2xl rounded-xl">
+  {/* Header */}
+  <div className="flex flex-col sm:flex-row w-full justify-between items-start sm:items-center gap-3">
+    <h1 className="text-lg sm:text-xl font-bold">Hire Selection Assistant</h1>
+    <Button className="bg-blue-600 text-white w-full sm:w-auto" variant="outline">
+      Get Started
+    </Button>
+  </div>
 
-          <div className="grid grid-cols-2 mt-7 gap-5">
-            <div className="flex flex-col gap-5 p-5 bg-slate-100 rounded-xl">
-              <h1 className="font-bold">What is a Selection Assistant?</h1>
-              <p className="text-slate-500 text-sm">
-                When you receive numerous applications for a job posting, our
-                Selection Assistant can help you identify the best candidates.
-                This tool allows you to hire a mid-level freelancer to review
-                applications and recommend the most suitable talent for your
-                project.
-              </p>
-            </div>
+  {/* Content Grid */}
+  <div className="grid grid-cols-1 md:grid-cols-2 mt-6 gap-5">
+    {/* Left Section */}
+    <div className="flex flex-col gap-4 p-4 sm:p-5 bg-slate-100 rounded-xl">
+      <h1 className="font-bold text-base sm:text-lg">What is a Selection Assistant?</h1>
+      <p className="text-slate-500 text-sm sm:text-base leading-relaxed">
+        When you receive numerous applications for a job posting, our
+        Selection Assistant can help you identify the best candidates.
+        This tool allows you to hire a mid-level freelancer to review
+        applications and recommend the most suitable talent for your
+        project.
+      </p>
+    </div>
 
-            <div className="flex p-5 flex-col gap-5 bg-slate-100 rounded-xl">
-              <h1 className="font-bold">Benefits</h1>
-              <div className="flex flex-col gap-1">
-                <p className="text-sm text-slate-500">
-                  • Save time screening applications
-                </p>
-                <p className="text-sm text-slate-500">
-                  • Get expert recommendations
-                </p>
-                <p className="text-sm text-slate-500">
-                  • More accurate candidate matching
-                </p>
-                <p className="text-sm text-slate-500">
-                  • Reduce hiring mistakes
-                </p>
-                <p className="text-sm text-slate-500">
-                  • Transparent selection process
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+    {/* Right Section */}
+    <div className="flex flex-col gap-4 p-4 sm:p-5 bg-slate-100 rounded-xl">
+      <h1 className="font-bold text-base sm:text-lg">Benefits</h1>
+      <div className="flex flex-col gap-1">
+        <p className="text-sm sm:text-base text-slate-500">• Save time screening applications</p>
+        <p className="text-sm sm:text-base text-slate-500">• Get expert recommendations</p>
+        <p className="text-sm sm:text-base text-slate-500">• More accurate candidate matching</p>
+        <p className="text-sm sm:text-base text-slate-500">• Reduce hiring mistakes</p>
+        <p className="text-sm sm:text-base text-slate-500">• Transparent selection process</p>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
       <div className="w-full  mt-7 flex justify-center">
 <div className="w-full max-w-6xl  flex flex-col gap-10 bg-white p-4 shadow-2xl rounded-xl">

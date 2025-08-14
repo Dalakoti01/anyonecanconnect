@@ -37,7 +37,7 @@ const GuestFooter = () => {
                 rel="noopener noreferrer"
               href="/"
               >
-                <Button className="bg-[rgb(33,100,243)] text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
+                <Button className="bg-[rgb(33,100,243)] cursor-pointer text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
                   Join Us
                 </Button>
               </a>

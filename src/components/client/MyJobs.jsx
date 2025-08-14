@@ -121,40 +121,35 @@ const statusFromQuery = searchParams.get("status") || "";
               <div className="w-full border-t-2 pt-2 border-slate-300"></div>
 
               <div className="flex flex-col lg:flex-row justify-between gap-4 px-4 py-1 pb-4 w-full">
-                <div className="flex  gap-4">
-                  <div className="flex gap-2">
-                    <input
-                      className="cursor-pointer"
-                      type="checkbox"
-                      id="fixed"
-                    />
-                    <label className="mt-2" htmlFor="fixed">
-                      Fixed Price
-                    </label>
-                  </div>
+              <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+  <div className="flex items-center gap-2">
+    <input
+      className="cursor-pointer"
+      type="checkbox"
+      id="fixed"
+    />
+    <label htmlFor="fixed">Fixed Price</label>
+  </div>
 
-                  <div className="flex gap-2">
-                    <input
-                      className="cursor-pointer"
-                      type="checkbox"
-                      id="hourly"
-                    />
-                    <label className="mt-2" htmlFor="fixed">
-                      Hourly
-                    </label>
-                  </div>
+  <div className="flex items-center gap-2">
+    <input
+      className="cursor-pointer"
+      type="checkbox"
+      id="hourly"
+    />
+    <label htmlFor="hourly">Hourly</label>
+  </div>
 
-                  <div className="flex gap-2">
-                    <input
-                      className="cursor-pointer"
-                      type="checkbox"
-                      id="milestones"
-                    />
-                    <label className="mt-2" htmlFor="fixed">
-                      With Milestones
-                    </label>
-                  </div>
-                </div>
+  <div className="flex items-center gap-2">
+    <input
+      className="cursor-pointer"
+      type="checkbox"
+      id="milestones"
+    />
+    <label htmlFor="milestones">With Milestones</label>
+  </div>
+</div>
+
                 <div className="flex gap-2 items-center w-full sm:w-auto">
                   <Search className="mt-1 text-gray-900" />
                   <Input

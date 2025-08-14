@@ -8,13 +8,13 @@ const Earning = () => {
     <div className="w-full h-full pt-5">
       <div className="pb-5 w-full min-h-screen h-full bg-[#F5F5F5]">
         <div className="w-full flex justify-center">
-          <div className="mt-7 flex justify-between w-full max-w-6xl">
+          <div className="mt-7 flex justify-between w-full max-w-6xl px-4">
             <h1 className="font-bold text-2xl">Transaction Management</h1>
           </div>
         </div>
 
-        <div className="w-full flex justify-center">
-          <div className="w-full max-w-6xl grid grid-cols-4 gap-5 mt-7">
+        <div className="w-full flex justify-center px-4">
+          <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-7">
             {/* Total Transactions */}
             <div className="shadow-2xl transition-transform duration-300 hover:-translate-y-2 border-b-4 border-blue-600 rounded-xl bg-white flex flex-col gap-4 p-5">
               <h1 className="text-slate-500">Total Transactions</h1>
@@ -58,19 +58,20 @@ const Earning = () => {
         </div>
 
         {/* Transaction Table Header */}
-        <div className="w-full flex justify-center">
-          <div className="bg-slate-100 text-sm text-slate-600 p-4 mt-10 shadow-2xl rounded-lg w-full max-w-6xl grid grid-cols-7 gap-3">
-            <h1>Transaction ID</h1>
-            <h1>Client Name</h1>
-            <h1>Service</h1>
-            <h1>Date</h1>
-            <h1>Amount</h1>
-            <h1>Status</h1>
-            <h1>Actions</h1>
+        <div className="w-full flex justify-center px-4">
+          <div className="bg-slate-100 text-sm text-slate-600 p-4 mt-10 shadow-2xl rounded-lg w-full max-w-6xl overflow-x-auto">
+            <div className="min-w-[600px] grid grid-cols-7 gap-3">
+              <h1>Transaction ID</h1>
+              <h1>Client Name</h1>
+              <h1>Service</h1>
+              <h1>Date</h1>
+              <h1>Amount</h1>
+              <h1>Status</h1>
+              <h1>Actions</h1>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   );
 };

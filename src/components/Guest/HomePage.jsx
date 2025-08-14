@@ -35,7 +35,7 @@ const HomePage = () => {
                 </div>
               </div>
               <Link href="/coming-soon">
-                <Button className="mt-7 py-4 md:py-6 bg-[#2164f3] hover:bg-white hover:text-black max-w-32 text-[#FCFCFC]">
+                <Button className="mt-7 py-4 md:py-6 bg-[#2164f3] cursor-pointer hover:bg-white hover:text-black max-w-32 text-[#FCFCFC]">
                   Coming Soon
                 </Button>
               </Link>
@@ -116,7 +116,7 @@ const HomePage = () => {
               rel="noopener noreferrer"
               href="/"
             >
-              <Button className="mt-7 text-lg font-bold px-10 py-4 md:py-6 bg-[#2164f3] hover:bg-white hover:text-black max-w-32 text-[#FCFCFC]">
+              <Button className="mt-7 text-lg cursor-pointer font-bold px-10 py-4 md:py-6 bg-[#2164f3] hover:bg-white hover:text-black max-w-32 text-[#FCFCFC]">
                 Join Us
               </Button>
             </a>
@@ -149,9 +149,9 @@ const HomePage = () => {
 
       {/* Why Choose Section */}
       <div className="flex flex-col gap-5 justify-center items-center mt-10">
-        <h1 className="font-bold text-5xl text-center">Why Choose AnyOneCanConnect For Freelancing?</h1>
+        <h1 className="font-bold text-center text-3xl lg:text-5xl ">Why Choose AnyOneCanConnect For Freelancing?</h1>
         <p className="font-bold text-3xl text-center">A Platform Built for You</p>
-        <p className="px-12 text-3xl text-center">
+        <p className="px-12 text-2xl text-center">
           We know the challenges freelancers and clients face. That’s why AnyOneCanConnect is designed to 
           make things easier, fairer, and more effective. Here’s how
         </p>
@@ -173,7 +173,7 @@ const HomePage = () => {
           </p>
           <a rel="noopener noreferrer"
               href="/">
-            <Button className="bg-[rgb(33,100,243)] text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
+            <Button className="bg-[rgb(33,100,243)] cursor-pointer text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
               Join Us
             </Button>
           </a>
@@ -189,7 +189,7 @@ const HomePage = () => {
           </p>
           <a rel="noopener noreferrer"
               href="/">
-            <Button className="bg-[rgb(33,100,243)] text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
+            <Button className="bg-[rgb(33,100,243)] cursor-pointer text-sm md:text-lg px-5 md:px-7 py-3 md:py-5 font-bold hover:bg-white hover:text-black">
               Join Us
             </Button>
           </a>

@@ -89,35 +89,43 @@ const FindTalent = () => {
         </div>
 
         {/* Carousel Section */}
-        <div className="w-full flex justify-center mt-7">
-          <Carousel className="w-full bg-white max-w-5xl shadow-xl p-4 rounded-lg">
-            <CarouselContent className="flex gap-4">
-              {categories.map((category, index) => (
-                <CarouselItem
-                  key={index}
-                  className="flex justify-center basis-1/3 md:basis-1/5"
-                >
-                  <Button
-                    variant="outline"
-                    onClick={() => {
-                      setSearchTerm(category.value);
-                      setSelectedCategory(category.value);
-                    }}
-                    className={`rounded-xl px-4 py-2 md:px-6 md:py-3 ${
-                      selectedCategory === category.value
-                        ? "bg-blue-500 text-white"
-                        : "hover:bg-blue-500 hover:text-white"
-                    }`}
-                  >
-                    {category.label}
-                  </Button>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
+       <div className="w-full flex justify-center mt-7">
+  <Carousel className="w-full bg-white max-w-5xl shadow-xl p-4 rounded-lg">
+    <CarouselContent className="flex gap-3 sm:gap-4">
+      {categories.map((category, index) => (
+        <CarouselItem
+          key={index}
+          className="
+            flex justify-center
+            basis-1/2        /* mobile: 2 per row */
+            sm:basis-1/3     /* small tablets: 3 per row */
+            md:basis-1/4     /* tablets: 4 per row */
+            lg:basis-1/5     /* laptops/desktops: 5 per row */
+          "
+        >
+          <Button
+            variant="outline"
+            onClick={() => {
+              setSearchTerm(category.value);
+              setSelectedCategory(category.value);
+            }}
+            className={`rounded-xl w-full text-sm sm:text-base px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-3
+              ${
+                selectedCategory === category.value
+                  ? "bg-blue-500 text-white"
+                  : "hover:bg-blue-500 hover:text-white"
+              }`}
+          >
+            {category.label}
+          </Button>
+        </CarouselItem>
+      ))}
+    </CarouselContent>
+    <CarouselPrevious className="hidden sm:flex" />
+    <CarouselNext className="hidden sm:flex" />
+  </Carousel>
+</div>
+
 
         {/* Filters Section */}
         <div className="w-full flex justify-center">

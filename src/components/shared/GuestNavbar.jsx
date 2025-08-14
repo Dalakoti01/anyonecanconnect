@@ -39,16 +39,16 @@ const GuestNavbar = () => {
           <Link href="/">Home</Link>
           <Link href="/about">About Us</Link>
           <Link href="/offering">Offerings</Link>
-          <Link href="/coming-soon">Coming Soon</Link>
+          {/* <Link href="/coming-soon">Coming Soon</Link> */}
         </div>
 
         {/* Auth Buttons (desktop only) */}
         <div className="hidden md:flex gap-4">
           <Link href="/signup">
-            <Button className="bg-white text-black hover:bg-white">Sign Up</Button>
+            <Button className="bg-white cursor-pointer text-black hover:bg-white">Sign Up</Button>
           </Link>
           <Link href="/login">
-            <Button className="bg-blue-600 text-white hover:bg-blue-700">Login</Button>
+            <Button className="bg-blue-600 cursor-pointer text-white hover:bg-blue-700">Login</Button>
           </Link>
         </div>
       </div>
@@ -66,9 +66,9 @@ const GuestNavbar = () => {
             <Link href="/offering" onClick={() => setIsOpen(false)} className="block">
               Offerings
             </Link>
-            <Link href="/coming-soon" onClick={() => setIsOpen(false)} className="block">
+            {/* <Link href="/coming-soon" onClick={() => setIsOpen(false)} className="block">
               Coming Soon
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col gap-3">
             <Link href="/signup" onClick={() => setIsOpen(false)}>
